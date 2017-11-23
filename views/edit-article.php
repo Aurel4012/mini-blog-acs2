@@ -1,24 +1,18 @@
 <?php
-   echo getcwd().'<br>'; 
-	require_once('view/header.inc.php');
-  // if (isset($_POST['titre_article'])&isset($_FILES['mini_img'])&isset($_POST['mytextarea'])){
-    
-  //   header("Location: index.php?action=update&titre_article=$_POST['titre_article']&mini_img=$_FILES['mini_img']&txt=$_POST['mytextarea']");
-  // }
-  
+   // echo getcwd().'<br>'; 
 ?>
 
 <div class="container">
-  <form method="post" method="post" action="index.php" enctype="multipart/form-data">
+  <form method="post" method="post" action="index.php?action=art_update" enctype="multipart/form-data">
 
     <label for="mini_img_import">Titre de l'article</label>
     <input type="hidden" name="id_article" value="<?php echo $id_article ?>" class="form-control-file" id="id_article">
     <input type="text" name="titre_article" value="<?php echo $article_title ?>" class="form-control-file" id="titre_article">
 
      	 <label for="mini_img_import">Image Actuelle	 <img src="<?php echo $article_preview_image ?>"></label>
-  	 <label for="mini_img_import">Importer l'image miniature</label>
+  	 <!-- <label for="mini_img_import">Importer l'image miniature</label> -->
   
-    <input type="file" name="mini_img" class="form-control-file" id="mini_img">
+    <!-- <input type="file" name="mini_img" class="form-control-file" id="mini_img"> -->
 
     <textarea id="mytextarea" name="mytextarea"><?php echo $article_text ?></textarea>
     <button  type="submit"  class="btn btn-warning">Modifier</button>
@@ -33,4 +27,3 @@
 <script type="text/javascript" src="js/action_button.js"></script>
 </div>
 
-<!-- <?php require_once('../public/view/footer.inc.php');?> Voir si éventuellement nous gardons le footer ou non? -->

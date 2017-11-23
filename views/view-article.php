@@ -1,6 +1,4 @@
-<?php
-	require_once('../../public/view/header.inc.php');
-?>
+
 
 	<?php echo $article_title ?>
 <div class="container">
@@ -11,10 +9,9 @@
     <input type="file" name="mini_img" class="form-control-file" id="mini_img">
     <textarea id="mytextarea">On attend votre article ici! Vite il fait soif!</textarea>
   </form>
-<script type="text/javascript" src="../../public/view/vendor/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="../../public/view/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" type="text/javascript" src="../../public/view/vendor/tinymce/jquery.tinymce.min.js"></script>
-<script type="text/javascript" src="../../public/view/vendor/tinymce/tinymce.min.js"></script>
-<script type="text/javascript" src="../../public/view/vendor/tinymce/edit.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bundle.min.js"></script>
+<script type="text/javascript" type="text/javascript" src="js/tinymce/jquery.tinymce.min.js"></script>
+<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript" src="js/tinymce/edit.js"></script>
 </div>
-<?php require_once('../../public/view/footer.inc.php');?>
