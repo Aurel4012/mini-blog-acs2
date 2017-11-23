@@ -7,14 +7,14 @@
             <meta name="author" content="">
             <title>Mini-Blog ACS</title>
             <!-- Bootstrap core CSS -->
-            <link href="../public/view/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="../../public/view/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
             <!-- Custom styles for this template -->
-            <link href="../public/view/css/blog-post.css" rel="stylesheet">
+            <link href="../../public/view/css/blog-post.css" rel="stylesheet">
         </head>
         <header>
             <div class="container-fluid col-lg-12 mt-3">
                 <div class="container text-center">
-                    <img src="../public/view/css/img/logo.png" class="text-center">
+                    <img src="../../public/view/css/img/logo.png" class="text-center">
                     <h1 class="mt-3  text-center">L'AlcoBlog - Le blog qui va vous faire tourner la tête!</h1>
                 </div>
                 <p class="lead mt-2 text-center">
