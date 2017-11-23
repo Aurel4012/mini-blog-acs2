@@ -63,7 +63,7 @@ private $_categorie;
 
         return $this;
     }
-
+    
     public function getText()
     {
         return $this->_text;
