@@ -32,7 +32,7 @@ CREATE TABLE `table_article` (
   `id_article` tinyint(4) NOT NULL,
   `title` varchar(20) NOT NULL,
   `auteur` varchar(20) NOT NULL,
-  `text` varchar(50) NOT NULL,
+  `a_text` varchar(50) NOT NULL,
   `data_creation` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
   `data_update` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
   `preview_image` varchar(500) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `table_article` (
 -- Déchargement des données de la table `table_article`
 --
 
-INSERT INTO `table_article` (`id_article`, `title`, `auteur`, `text`, `data_creation`, `data_update`, `preview_image`, `categorie`) VALUES
+INSERT INTO `table_article` (`id_article`, `title`, `auteur`, `a_text`, `data_creation`, `data_update`, `preview_image`, `categorie`) VALUES
 (1, 'Test', 'Aurel', 'Mon premier article', '2017-11-22 11:01:09.541990', '0000-00-00 00:00:00.000000', '../public/view/css/img/logo.png', '7%'),
 (2, 'Test', 'aurel', 'test mon 1er article', '2017-11-21 12:31:00.000000', '0000-00-00 00:00:00.000000', 'img/test.jpg', '7%'),
 (3, 'Nouveau titre', 'aurel', 'Mon troisieme article', '2017-11-22 13:26:26.099770', '2017-11-21 11:00:00.000000', 'img/test.jpg', '7%');

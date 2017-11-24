@@ -16,7 +16,7 @@ private $_categorie;
 		$this->_id_article = $donnees['id_article'];
 		$this->_title = $donnees['title'];
 		$this->_auteur = $donnees['auteur'];
-		$this->_text = $donnees['text'];
+		$this->_text = $donnees['a_text'];
 		$this->_data_creation = $donnees['data_creation'];
 		$this->_data_update = $donnees['data_update'];
 		$this->_preview_image = $donnees['preview_image'];

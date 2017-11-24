@@ -35,13 +35,14 @@ class Article_query
 
     public function updateArticle(Article $article)
     {
-    	$req = $this->_bdd->prepare('UPDATE table_article SET title= :title WHERE id_article = :id_article');
+    	$req = $this->_bdd->prepare('UPDATE table_article SET title= :title , a_text= :a_text WHERE id_article = :id_article');
 		$req->execute(array(
 				'title' => $article->getTitle(),
+				'a_text' => $article->getText(),
 			    'id_article' => $article->getIdArticle()));
     }
 
-    public function deleteArticle($id)
+    public function deleteArticle($id_article)
     {
     	$req = $this->_bdd->prepare('DELETE FROM table_article WHERE id_article = :id_article');
 		return $req->execute(array(
